@@ -35,8 +35,14 @@ public class Principal1 {
             mensajeFinal = String.format("%s%s\n", mensajeFinal, 
                     presentarReporte(nombre, apellido, tipoNotas, 
                     promedioEstudiante, numeroNotasArribaPromedio));
+            // crea una cadena acumuladora llamada mensaje final, en la que
+            // envia 2 parametros, mensaje final para acumular, y el valor que 
+            // devuelva la funcion presentarReporte, al cual se le envian
+            // otros valores 
         }
         CrearArchivoTexto.agregarRegistros(mensajeFinal);
+        // llama a la funcion agregarRegistros dentro de la clase de 
+        // CrearArchivoTexto, en la cual, usando el formatter se crea el archivo
 
     }
     
